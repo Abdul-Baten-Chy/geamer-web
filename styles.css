@@ -8,13 +8,16 @@ body{
     font-size: calc(15px + .39vw);
 }
 nav {
-    max-width: 1200px;
+    max-width: 100%;
     min-height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 38px 0;
+    padding: 38px 90px;
+    /* box-shadow: .5px .5px 5px grey; */
+
 }
 .logo{
     width: 50%;
@@ -61,6 +64,94 @@ nav {
 }
 
 
+/* banner section start */
+.banner{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-height: 500px;
+
+}
+.goat {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./images/group-14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 90px;
+    
+}
+.goat h2{
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.goat h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.goat p{
+    margin-top:20px;
+}
+.goat .fa-circle-play, .goat .fa-download, .goat .fa-user {
+    color: rgba(255,66,165,1);
+    letter-spacing: 10px;
+    font-size: 1.6rem;
+}
+.goat .btn {
+    margin: 30px 0;
+    
+}
+.goat button:first-of-type {
+    width: 150px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 40px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.goat button:last-of-type {
+    width: 190px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #4EC5F7;
+
+}
+
+.pic {
+    width: 50%;
+    height: auto;
+    padding-right: 90px;
+}
+.pic img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+ /* banner section end  */
 
 
 
@@ -68,19 +159,72 @@ nav {
 @media screen and (max-width: 576px) {
     nav {
         flex-direction: column;
-
     }
     .menu ul {
         flex-direction: column;
     }
     .logo{
-
+        width: 100%;
+        justify-content: center;
         margin-bottom: 40px;
     }
     .menu .baton{
         margin-top: 25px;
     }
-    
+    .banner{
+        flex-direction: column-reverse;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .goat {
+        width: 100%;
+        padding: 0px 60px;
+        margin: 0px auto;
+        justify-content: center;
+        background-size: 100%;
+
+    }
+    .goat h2{
+        font-size: 2rem;
+    }
+    .goat h1 {
+        font-size: 4rem;
+    }
+    .goat .btn{
+        display: flex;
+        align-items: center;
+    }
+    .goat p{
+        margin-top:10px;
+    }
+    .goat button:first-of-type {
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 1.2rem;
+    }
+    .goat button:last-of-type {
+        width: 140px;
+        height: 60px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+    }
+    .pic {
+        width: 90%;
+        height: auto;
+        /* background-color: #F948B2; */
+        margin: 30px auto;
+        padding-right: 0px;
+    }
+    .pic img {
+        display: block;
+        width: 80%;
+        height: 100%;
+        object-fit: initial;
+        margin: 0 auto;
+        padding-right: 0px;
+    }
+ 
 }
 
 
@@ -101,5 +245,44 @@ nav {
         gap: 20px;
         justify-content: end;
         align-items: center;
+    }
+    .menu{
+        width:100%
+    }
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-height: 500px;
+    
+    }
+    .pic {
+        width: 90%;
+        height: auto;
+        /* background-color: #F948B2; */
+        margin: 30px auto;
+        padding-right: 0px;
+    }
+    .pic img {
+        display: block;
+        width: 80%;
+        height: 100%;
+        object-fit: initial;
+        margin: 0 auto;
+        padding-right: 0px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .goat {
+        width: 100%;
+        padding: 0px 60px;
+        margin: 0px auto;
+        justify-content: center;
+        background-size: 100%;
+
     }
 }
