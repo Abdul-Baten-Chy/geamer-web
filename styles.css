@@ -159,7 +159,7 @@ nav {
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin: 100px auto;
+    margin: 100px auto 0px;
  }
  .play-txt h2 span{
     color: #F948B2;
@@ -194,8 +194,64 @@ nav {
     bottom: 140px;
     right: 80px;
  }
+ .online-games-txt{
+    text-align: center;
+    margin-top: 80px;
+ }
+.online-games-txt h2{
+    color: #0B0223;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.online-games-txt p{
+    color: #534C64;
+}
+.online-games-txt span{
+    color: #F948B2;
+}
+.online-images {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 40px auto;
+}
+.online-images img{
+    width:17%;
+    height: 20%;
+}
 
-
+/* profile section begins */
+.grid-container {
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px; 
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(255, 66, 165, 0.03);
+    padding: 60px 140px;
+  }
+  
+  .item {
+    padding: 8px;
+    text-align: center;
+  }
+.bg{
+    background: #FFF;
+    width:100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 40px;
+}
+.bg img{
+    width: 20%;
+  
+}
+.bg h3{
+    font-size: 18px;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
     nav {
