@@ -252,6 +252,49 @@ nav {
 .bg h3{
     font-size: 18px;
 }
+footer{
+    width: 100%;
+    min-height: 500px;
+    background-color: rgba(11, 2, 35, 1);
+}
+footer .text{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    color: #FFF;
+    margin-bottom: 50px;
+    
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.icon i{
+    color: #FFF;
+    font-size: 2rem;
+}
+footer .extra-text{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    color: #FFF;
+}
+footer>section> p{
+    color: #FFF;
+    text-align: center;
+    margin-top: 50px;
+}
+footer>section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+
+
+
 /* mobile responsive */
 @media screen and (max-width: 576px) {
     nav {
